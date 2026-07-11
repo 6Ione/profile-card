@@ -35,7 +35,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 350px;
+      width: 350px;
     }
 
     .cardContent {
@@ -63,15 +63,15 @@
     }
 
     .profileContent {
-      font-weight: 400;
       color: hsl(227, 10%, 46%);
-      margin-top: 70px;
+      font-weight: 400;
+      padding-top: 70px;
       text-align: center;
     }
     .profileContent h1 {
+      color: hsl(229, 23%, 23%);
       font-weight: 700;
       font-size: larger;
-      color: hsl(229, 23%, 23%);
     }
     .profileContent span {
       color: hsl(227, 10%, 46%);
@@ -82,6 +82,36 @@
       display: flex;
       justify-content: space-around;
       text-align: center;
+      padding:1rem 0;
+    }
+
+    .socialStats h2 {
+      color: hsl(229, 23%, 23%);
+      margin-bottom: 4px;
+    }
+
+    .socialStats p {
+      color: hsl(227, 10%, 46%);
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-top: 0;
+    }
+
+    hr {
+      opacity: 40%;
+    }
+
+    @media (max-width:375px){
+    .card{
+      width:325px;
+    }
+
+    body{
+        background:
+            url(images/bg-pattern-top.svg) top -500px left -700px no-repeat,
+            url(images/bg-pattern-bottom.svg) bottom -500px right -700px no-repeat,
+            hsl(185,75%,39%);
+          }
     }
   </style>
 </head>
