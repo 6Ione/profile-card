@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background:
+        url(images/bg-pattern-top.svg) top -400px left -80px no-repeat,
+        url(images/bg-pattern-bottom.svg) bottom -450px right -80px no-repeat,
+        hsl(185,75%,39%);
+      background-color: hsl(185, 75%, 39%);
+      margin: 0;
+      font-family: 'Kumbh Sans', sans-serif
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 350px;
+    }
+
+    .cardContent {
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow:0 35px 40px rgba(0,0,0,.18);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cardImage img {
+      border-radius: 16px 16px 0 0;
+    }
+
+    .profileImage {
+      position: absolute;
+      left:50%;
+      top:90px;
+      transform:translateX(-50%);
+    }
+
+    .cardProfile img {
+      border: 5px solid white;
+      border-radius: 50%;
+    }
+
+    .profileContent {
+      font-weight: 400;
+      color: hsl(227, 10%, 46%);
+      margin-top: 70px;
+      text-align: center;
+    }
+    .profileContent h1 {
+      font-weight: 700;
+      font-size: larger;
+      color: hsl(229, 23%, 23%);
+    }
+    .profileContent span {
+      color: hsl(227, 10%, 46%);
+      font-weight: 400;
+    }
+
+    .socialStats {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="card">
+        <div class="cardContent">
+
+          <div class="cardImage">
+            <img src="./images/bg-pattern-card.svg" alt="background pattern card">
+          </div>
+
+          <div class="cardProfile">
+            <div class="profileImage">
+              <img src="./images/image-victor.jpg" alt="profile image">
+            </div>
+
+            <div class="profileContent">
+              <h1>Victor Crest <span>26</span></h1>
+              <p>London</p>
+            </div>
+            
+            <hr>
+
+            <div class="socialStats">
+              <div>
+                <h2>80K</h2>
+                <p>Followers</p>
+              </div>
+
+              <div>
+                <h2>803K</h2>
+                <p>Likes</p>
+              </div>
+
+              <div>
+                <h2>1.4k</h2>
+                <p>Photos</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Capo</a>.
+  </footer>
+</body>
+</html>
